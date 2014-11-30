@@ -19,9 +19,7 @@ module("Director.js", {
 var shared;
 
 function createTest(name, config, use, test, initialRoute) {
-  // We rename to `RouterAlias` for the browserify tests, since we want to be
-  // sure that no code is depending on `window.Router` being available.
-  var Router = window.Router || window.RouterAlias;
+  var Router = window.Router;
 
   if (typeof use === 'function') {
     test = use;

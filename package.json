@@ -22,13 +22,16 @@
     "ender"
   ],
   "devDependencies": {
-    "api-easy": "0.3.x",
-    "codesurgeon": "https://github.com/hij1nx/codesurgeon/tarball/master",
+    "api-easy": "~0.3.x",
     "colors": "~1.0.3",
+    "gulp": "~3.x",
+    "gulp-browserify": "~0.5.0",
+    "gulp-connect": "~2.2.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~1.0.1",
     "qunitjs": "~1.9.x",
-    "request": "~2.47.0",
-    "uglify-js": "~2.4.15",
-    "vows": "0.7.x"
+    "request": "~2.49.0",
+    "vows": "~0.7.0"
   },
   "ender": "./build/ender.js",
   "browserify": "./build/director",

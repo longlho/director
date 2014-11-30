@@ -934,6 +934,16 @@ requirement, you are probably building a "Web Page" and not a "Web
 Application". Director on the client is meant for script-heavy Web
 Applications.
 
+# Development
+
+Server/CLI tests are run via `npm test`.
+
+Browser testing relies on `gulp` so do `gulp` & open:
+
+- http://localhost:8080/test/browser/browserify-harness.html
+- http://localhost:8080/test/browser/html5-routes-harness.html
+- http://localhost:8080/test/browser/routes-harness.html
+
 # Licence
 
 (The MIT License)

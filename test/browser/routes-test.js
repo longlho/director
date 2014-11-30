@@ -698,7 +698,7 @@ createTest('changing the hash twice should call each route once', {
 test('fire the correct route when initializing the router', function(){
   window.location.hash = 'initial';
   var fired = [];
-  var router = new (window.Router || window.RouterAlias)({
+  var router = new window.Router({
     '/initial': function(){
       fired.push('/initial');
     },
@@ -727,7 +727,7 @@ test('do not combine hash if convert_hash_in_init is false', function(){
     fired.push('*');
   };
 
-  var router = new (window.Router || window.RouterAlias)(routes);
+  var router = new window.Router(routes);
 
   router.configure({
     html5history: true,
